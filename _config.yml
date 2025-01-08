@@ -45,4 +45,8 @@ exclude:
 
 # Pagination settings
 paginate: 5 # Number of posts per page
-paginate
+paginate_path: "/page:num/"
+
+# GitHub Pages-specific
+github:
+  is_project_page: false # Set to true if your GitHub Pages site is a project page
