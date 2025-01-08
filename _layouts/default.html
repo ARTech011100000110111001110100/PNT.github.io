@@ -7,48 +7,32 @@
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="module" src="/assets/js/index.js" defer></script>
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <script type="module" src="{{ site.baseurl }}/assets/js/index.js" defer></script>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
   </head>
   <body>
     <meta charset="utf-8">
     <header>
       <nav class="navbar">
         <ul class="nav-links">
-          <!-- Projects -->
+          {% for link in site.data.navigation %}
           <li class="dropdown">
-            <a href="{{ site.baseurl }}/projects" class="active">
-              Projects
+            <a href="{{ site.baseurl }}/{{ link.url }}" class="{% if page.url == link.url %}active{% endif %}">
+              {{ link.title }}
             </a>
+            {% if link.sublinks %}
             <ul class="dropdown-menu">
+              {% for sublink in link.sublinks %}
               <li>
-                <a href="/prj-computer-vision">
-                  Computer Vision
+                <a href="{{ site.baseurl }}/{{ sublink.url }}">
+                  {{ sublink.title }}
                 </a>
               </li>
+              {% endfor %}
             </ul>
+            {% endif %}
           </li>
-      
-          <!-- Home -->
-          <li>
-            <a href="/" class="">
-              Home
-            </a>
-          </li>
-      
-          <!-- Posts -->
-          <li>
-            <a href="/posts" class="">
-              Posts
-            </a>
-          </li>
-      
-          <!-- About -->
-          <li>
-            <a href="/about" class="">
-              About
-            </a>
-          </li>
+          {% endfor %}
         </ul>
       </nav>      
     </header> 
