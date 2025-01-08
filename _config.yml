@@ -19,9 +19,6 @@ collections:
   drafts:
     output: false # Drafts are not published unless explicitly enabled
 
-# Permalinks for posts
-permalink: /:title/
-
 # Defaults for files
 defaults:
   - scope:
