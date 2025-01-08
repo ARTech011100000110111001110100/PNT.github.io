@@ -1,7 +1,7 @@
 # Site settings
 title: PNT_bio
 description: My Bio
-#baseurl: "" # Leave this empty for GitHub Pages root-level deployment
+baseurl: "" # Leave this empty for GitHub Pages root-level deployment
 url: "https://artech011100000110111001110100.github.io" # Replace with your GitHub Pages URL
 
 # Markdown processing
