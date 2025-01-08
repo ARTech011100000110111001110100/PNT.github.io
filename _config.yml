@@ -24,7 +24,7 @@ permalink: /:title/
 # Defaults for files
 defaults:
   - scope:
-      path: "layouts/default.html" # All files
+      path: "" # All files
     values:
       layout: "default"
 
