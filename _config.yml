@@ -1,7 +1,7 @@
 # Site settings
-title: My Jekyll Blog
-description: A blog built with Jekyll and Markdown files.
-baseurl: "" # Leave this empty for GitHub Pages root-level deployment
+title: PNT_bio
+description: My Bio
+baseurl: "/PNT_bio" # Leave this empty for GitHub Pages root-level deployment
 url: "https://artech011100000110111001110100.github.io/PNT_bio/" # Replace with your GitHub Pages URL
 
 # Markdown processing
