@@ -27,7 +27,7 @@ collections:
     output: false # Drafts are not published unless explicitly enabled
 
 # Permalinks for posts
-permalink: /:categories
+permalink: /:title/
 
 # Defaults for files
 defaults:
