@@ -1,7 +1,7 @@
 ---
 layout: default
 title: My projects
-permalink: /projects
+permalink: /PNT_bio/projects
 ---
 
 # These are what I've done so far
