@@ -2,7 +2,7 @@
 title: PNT_bio
 description: My Bio
 baseurl: "/PNT_bio" # Leave this empty for GitHub Pages root-level deployment
-url: "https://artech011100000110111001110100.github.io/PNT_bio/" # Replace with your GitHub Pages URL
+url: "https://artech011100000110111001110100.github.io" # Replace with your GitHub Pages URL
 
 # Markdown processing
 markdown: kramdown # Default Markdown engine
@@ -13,18 +13,12 @@ kramdown:
   toc_levels: 1..6
 
 plugins:
+  - jekyll/github-metadata
   - jekyll-seo-tag        # SEO optimization
   - jekyll-feed           # Generate RSS feed
   - jekyll-paginate       # Pagination support
   - jekyll-sitemap        # Generate a sitemap
   - jekyll-archives       # Archive pages for posts
-  - jekyll-redirect-from  # Redirects for renamed or moved pages
-  - jekyll-gist           # Embed Gists
-  - jekyll-avatar         # Display avatars
-  - jekyll-remote-theme   # Use remote themes
-  - jekyll-include-cache  # Cache includes for performance
-  - jekyll-default-layout # Set default layout for pages
-  - jekyll-relative-links # Convert links to relative URLs
 
 # Collections
 collections:
@@ -49,11 +43,3 @@ exclude:
   - Gemfile.lock
   - node_modules
   - vendor/bundle
-
-# Pagination settings
-paginate: 5 # Number of posts per page
-paginate_path: "/page:num/"
-
-# GitHub Pages-specific
-github:
-  is_project_page: false # Set to true if your GitHub Pages site is a project page
