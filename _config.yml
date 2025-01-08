@@ -1,7 +1,7 @@
 # Site settings
 title: PNT_bio
 description: My Bio
-baseurl: "/PNT_bio" # Leave this empty for GitHub Pages root-level deployment
+#baseurl: "" # Leave this empty for GitHub Pages root-level deployment
 url: "https://artech011100000110111001110100.github.io" # Replace with your GitHub Pages URL
 
 # Markdown processing
@@ -11,14 +11,6 @@ kramdown:
   input: GFM # GitHub Flavored Markdown
   auto_ids: true
   toc_levels: 1..6
-
-plugins:
-  - jekyll/github-metadata
-  - jekyll-seo-tag        # SEO optimization
-  - jekyll-feed           # Generate RSS feed
-  - jekyll-paginate       # Pagination support
-  - jekyll-sitemap        # Generate a sitemap
-  - jekyll-archives       # Archive pages for posts
 
 # Collections
 collections:
