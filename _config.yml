@@ -11,14 +11,6 @@ kramdown:
   auto_ids: true
   toc_levels: 1..6
 
-# Theme settings
-theme: minima # Default theme for GitHub Pages
-plugins:
-  - jekyll-feed # RSS feed generator
-  - jekyll-seo-tag # SEO optimization
-  - jekyll-sitemap # Sitemap generation
-  - jekyll-paginate # Pagination for posts
-
 # Collections
 collections:
   posts:
