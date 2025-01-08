@@ -34,7 +34,7 @@ jobs:
       - name: Setup Ruby Packages
         uses: ruby/setup-ruby-pkgs@v1.33.2
         with:
-          ruby-version: '3.1'        # Specify your desired Ruby version
+          ruby-version: '3.2'        # Specify your desired Ruby version
           bundler: '2.3.26'          # Specify the Bundler version
           bundler-cache: true        # Enable caching of Bundler dependencies
           rubygems: 'latest'         # Update RubyGems to the latest version
