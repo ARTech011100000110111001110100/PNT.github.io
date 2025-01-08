@@ -29,6 +29,9 @@ defaults:
     values:
       layout: "default"
 
+include:
+  - _data
+
 # Exclude files and directories from being processed
 exclude:
   - Gemfile
