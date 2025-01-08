@@ -31,6 +31,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
       - name: Setup Ruby Packages
         uses: ruby/setup-ruby-pkgs@v1.33.2
         with:
@@ -39,8 +41,10 @@ jobs:
           bundler-cache: true        # Enable caching of Bundler dependencies
           rubygems: 'latest'         # Update RubyGems to the latest version
           working-directory: '.'
-      - name: Checkout
-        uses: actions/checkout@v4
+      - name: Install Bundler
+        run: gem install bundler
+      - name: Install Dependencies
+        run: bundle install
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
