@@ -1,0 +1,48 @@
+# Site settings
+title: My Jekyll Blog
+description: A blog built with Jekyll and Markdown files.
+baseurl: "" # Leave this empty for GitHub Pages root-level deployment
+url: "https://artech011100000110111001110100.github.io/PNT_bio/" # Replace with your GitHub Pages URL
+
+# Markdown processing
+markdown: kramdown # Default Markdown engine
+kramdown:
+  input: GFM # GitHub Flavored Markdown
+  auto_ids: true
+  toc_levels: 1..6
+
+# Theme settings
+theme: minima # Default theme for GitHub Pages
+plugins:
+  - jekyll-feed # RSS feed generator
+  - jekyll-seo-tag # SEO optimization
+  - jekyll-sitemap # Sitemap generation
+  - jekyll-paginate # Pagination for posts
+
+# Collections
+collections:
+  posts:
+    output: true # Enable posts to be converted to HTML
+  drafts:
+    output: false # Drafts are not published unless explicitly enabled
+
+# Permalinks for posts
+permalink: /:categories
+
+# Defaults for files
+defaults:
+  - scope:
+      path: "layouts/default.html" # All files
+    values:
+      layout: "default"
+
+# Exclude files and directories from being processed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle
+
+# Pagination settings
+paginate: 5 # Number of posts per page
+paginate
